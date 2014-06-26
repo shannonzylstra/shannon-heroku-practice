@@ -5,7 +5,7 @@ from numeral_converter import getNumerals
 app = Flask(__name__)
 class View(flask.views.MethodView):
     def get(self):
-		return flask.render_template('index.html')
+		return flask.render_template('index.html', title="Roman Numeral Converter")
     def post(self):
 		n = int(flask.request.form['expression'])
 		result = getNumerals(n)
