@@ -1,8 +1,4 @@
 {% extends "index.html" %}
 {% block result %}
-{% with messages = get_flashed_messages() %}
-	{% if messages %}
 <p>${{number}} = \text{ {{roman}} }$</p>
-	{% endif %}
-{% endwith %}
  {% endblock %}
