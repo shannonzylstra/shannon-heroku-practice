@@ -6,7 +6,7 @@
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 	</script>
 	<script type="text/javascript"
-    src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">    
+    src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
     </head>
     <body>
@@ -15,12 +15,5 @@
 	    <input type="text" name="expression" />
 	    <input type="submit" value="Convert" />
 	</form>
-	{% with messages = get_flashed_messages() %}
-	    {% if messages %}
-		    {% for message in messages %}
-<p>$${{ message }}$$</p>
-		    {% endfor %}
-	    {% endif %}
-	{% endwith %}
     </body>
 </html>
