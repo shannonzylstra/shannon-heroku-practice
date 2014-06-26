@@ -1,1 +1,1 @@
-web: gunicorn squared:app
+web: gunicorn numerals:app
