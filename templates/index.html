@@ -17,11 +17,9 @@
 	</form>
 	{% with messages = get_flashed_messages() %}
 	    {% if messages %}
-		<pre>
 		    {% for message in messages %}
-{{ message }}
+<p>$${{ message }}$$</p>
 		    {% endfor %}
-		</pre>
 	    {% endif %}
 	{% endwith %}
     </body>
