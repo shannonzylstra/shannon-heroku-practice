@@ -4,14 +4,13 @@
 	<title>My Template</title>
     </head>
     <body>
-	Enter a number:
+	Enter a number to convert to roman numerals:
 	<form action="/" method="post">
 	    <input type="text" name="expression" />
 	    <input type="submit" value="Square it!" />
 	</form>
 	{% with messages = get_flashed_messages() %}
 	    {% if messages %}
-		Answer:
 		<pre>
 		    {% for message in messages %}
 {{ message }}
