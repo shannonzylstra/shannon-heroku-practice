@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-	<title>My Template</title>
-	<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-	</script>
-	<script type="text/javascript"
-    src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-    </head>
-    <body>
-	Enter a number to convert to roman numerals:
-	<form action="/" method="post">
-	    <input type="text" name="expression" />
-	    <input type="submit" value="Convert" />
-	</form>
-    </body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+Enter a number to convert to roman numerals:
+<form action="/" method="post">
+    <input type="text" name="expression" />
+    <input type="submit" value="Convert" />
+</form>
+{% endblock %}
