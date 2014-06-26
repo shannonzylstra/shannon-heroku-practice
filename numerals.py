@@ -11,7 +11,7 @@ class View(flask.views.MethodView):
 		result = getNumerals(n)
 		display = "%s = %s" % (n, result)
 		flask.flash(display)
-		return self.get()		
+		return flask.render_template('index.html')		
 app.add_url_rule('/', view_func=View.as_view('main'), methods=['GET', 'POST'])
 app.secret_key = os.urandom(24)
 if __name__ == "__main__":
