@@ -9,7 +9,7 @@ class View(flask.views.MethodView):
     def post(self):
 		n = int(flask.request.form['expression'])
 		result = getNumerals(n)
-		display = "%s = %s" % (n, result)
+		display = "$%s = %s$" % (n, result)
 		flask.flash(display)
 		return self.get()		
 app.add_url_rule('/', view_func=View.as_view('main'), methods=['GET', 'POST'])
