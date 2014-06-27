@@ -1,10 +1,10 @@
-{% extends "layout.html" %}
+{% extends "style.html" %}
 {% block content %}
 <div class="container">
-<h2>Enter a number to convert to roman numerals:</h2>
+<p>Enter a number to convert to roman numerals:</p>
 <form action="/" method="post">
     <input type="text" name="expression" />
-    <input type="submit" value="Convert" />
+    <button type="submit" class="btn btn-success">Convert</button>
 </form>
 {% block result %}{% endblock %}
 </div>
