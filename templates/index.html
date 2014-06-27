@@ -1,9 +1,11 @@
 {% extends "layout.html" %}
 {% block content %}
-Enter a number to convert to roman numerals:
+<div class="container">
+<h2>Enter a number to convert to roman numerals:</h2>
 <form action="/" method="post">
     <input type="text" name="expression" />
     <input type="submit" value="Convert" />
 </form>
 {% block result %}{% endblock %}
+</div>
 {% endblock %}
