@@ -1,0 +1,35 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-compute {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-compute .form-compute-heading,
+.form-compute .checkbox {
+  margin-bottom: 10px;
+}
+.form-compute .checkbox {
+  font-weight: 300;
+}
+.form-compute .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-compute .form-control:focus {
+  z-index: 2;
+}
+.form-compute input[type="given"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
