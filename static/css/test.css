@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block style %}
+html {
+	font-family: 'Roboto', sans-serif;
+}
+{% endblock %}
