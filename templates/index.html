@@ -6,8 +6,10 @@
       <h3 class="form-compute-heading">Roman Numeral Converter</h3>
       <input type="given" class="form-control" placeholder="Enter an integer to convert" required autofocus name="expression">
       <button class="btn btn-success" type="submit">Convert</button>
-    </form> <!-- end form div -->
-    {% block result %}{% endblock %}
+    	<div class="result">
+		{% block result %}{% endblock %}
+	    </div>
+	</form> <!-- end form div -->
   </div> <!-- end container div -->
 
 </div>

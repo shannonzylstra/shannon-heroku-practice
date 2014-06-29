@@ -1,3 +1,8 @@
+#roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
 body {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -9,12 +14,12 @@ body {
   padding: 15px;
   margin: 0 auto;
 }
-.form-compute .form-compute-heading,
-.form-compute .checkbox {
+.form-compute .form-compute-heading {
   margin-bottom: 10px;
 }
-.form-compute .checkbox {
-  font-weight: 300;
+
+#numeral {
+  margin-top: 10px;
 }
 .form-compute .form-control {
   position: relative;
