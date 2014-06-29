@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def convert():
     if request.method == 'POST':
-        n = int(flask.request.form['expression'])
+        n = int(request.form['expression'])
         result = getNumerals(n)
         return render_template('after.html', title="Roman Numeral Converter", number=n, roman=result)
 
