@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 import os
 from numeral_converter import getNumerals
+import re
 
 app = Flask(__name__)
 
