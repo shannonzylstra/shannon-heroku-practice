@@ -21,6 +21,11 @@ body {
 #numeral {
   margin-top: 10px;
 }
+
+#numeral h2 {
+  text-align: center;
+}
+
 .form-compute .form-control {
   position: relative;
   height: auto;
